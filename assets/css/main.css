@@ -1,0 +1,124 @@
+:root {
+  --black: #000;
+  --white: #fff;
+  --neonblack: #0e090d;
+  --neongreen: #a7ff50;
+  --neonpink: #e60c55;
+}
+
+.wrap {
+  background-color: var(--neonblack);
+}
+
+/* 헤더 */
+.container {
+  max-width: 166rem;
+  padding: 0 12.8rem;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 12.8rem;
+  z-index: 999;
+  background-color: var(--neonblack);
+}
+
+header .logo {
+  font-family: "MangoGrotesque-Regular";
+  font-size: 4rem;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  /**/
+  color: var(--white);
+}
+
+header .menu .menu_list {
+  display: flex;
+  gap: 6.8rem;
+  font-family: "MangoGrotesque-Regular";
+  font-size: 1.8rem;
+  /**/
+  color: var(--white);
+}
+
+.section01 {
+  height: 100vh;
+  position: relative;
+  background-color: var(--neonblack);
+  overflow-x: clip;
+  font-family: "MangoGrotesque-Regular";
+}
+
+.section01_img img {
+  width: 26vw;
+  height: auto;
+}
+
+.section01 .section01_inner {
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  padding-top: 5%;
+}
+
+.title01 {
+  position: relative;
+}
+
+.title01 h2 {
+  font-size: 136px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.title01 small {
+  position: absolute;
+  right: 0;
+  font-size: 24px;
+}
+
+.title01 small::before {
+  content: "\f111";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  color: var(--neongreen);
+  padding-right: 10px;
+  font-size: 10px;
+}
+
+.title02 {
+  font-size: 106px;
+}
+
+/* 섹션 02 */
+
+.section02 {
+  height: 100vh;
+}
+.section02 .section02_inner {
+  display: flex;
+  justify-content: space-between;
+}
+.section02 .section02_text {
+  text-align: left;
+  color: var(--white);
+  padding-right: 100px;
+}
+.section02_text h2 {
+  font-size: 60px;
+  letter-spacing: -5px;
+  padding-bottom: 70px;
+  font-weight: 500;
+}
+.section02_text span {
+  font-size: 28px;
+  letter-spacing: -2px;
+  font-weight: 400;
+}
+.section02_text sp\
