@@ -12,7 +12,6 @@
 
 /* 헤더 */
 .container {
-  max-width: 166rem;
   padding: 0 12.8rem;
   margin: 0 auto;
 }
@@ -53,9 +52,34 @@ header .menu .menu_list {
   font-family: "MangoGrotesque-Regular";
 }
 
+.section01_img {
+  position: relative;
+  display: inline-block;
+}
+
 .section01_img img {
-  width: 26vw;
+  width: 36vw;
   height: auto;
+  animation: float 4s ease-in-out infinite;
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .section01 .section01_inner {
@@ -64,7 +88,6 @@ header .menu .menu_list {
   justify-content: space-between;
   align-items: center;
   text-align: left;
-  padding-top: 5%;
 }
 
 .title01 {
@@ -101,24 +124,130 @@ header .menu .menu_list {
 .section02 {
   height: 100vh;
 }
+
 .section02 .section02_inner {
   display: flex;
   justify-content: space-between;
 }
+
 .section02 .section02_text {
   text-align: left;
   color: var(--white);
   padding-right: 100px;
+  position: relative;
 }
+
 .section02_text h2 {
-  font-size: 60px;
+  font-size: 64px;
   letter-spacing: -5px;
   padding-bottom: 70px;
   font-weight: 500;
 }
+
 .section02_text span {
-  font-size: 28px;
+  font-size: 32px;
   letter-spacing: -2px;
   font-weight: 400;
 }
-.section02_text sp\
+
+.section02_inner small {
+  position: absolute;
+  left: 0;
+  font-size: 18px;
+  bottom: -50px;
+}
+
+.section02_inner small::before {
+  content: "\f111";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  color: var(--neonpink);
+  font-size: 10px;
+  padding-right: 10px;
+}
+
+/* 섹션 03 */
+
+.section03 {
+  overflow: hidden;
+}
+
+.section03_inner h2 {
+  color: var(--white);
+  font-family: "MangoGrotesque-Regular";
+  font-size: 128px;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.section03_text {
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+
+.section03_text .left_text h3 {
+  font-size: 96px;
+  font-family: "MangoGrotesque-Regular";
+  font-weight: 300;
+}
+
+.section03_text span {
+  font-family: "Pretendard-Regular";
+  font-size: 20px;
+  font-weight: 4;
+}
+
+.section03_inner small::before {
+  content: "\f111";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  color: var(--neonpink);
+  font-size: 10px;
+  padding-right: 10px;
+}
+
+.section03_img {
+  display: flex;
+  gap: 20px;
+  padding: 80px 0;
+}
+
+.section03_img .img-wrap {
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 2%;
+  margin-right: 10px;
+}
+
+.section03_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section04 .section04_text {
+  width: 1461px;
+  margin: 160px 0;
+}
+.section04 .section04_text ul li {
+  color: var(--white);
+  height: 121px;
+  line-height: 121px;
+  font-size: 84px;
+  font-family: "GT-America";
+  text-align: left;
+}
+.section04 .section04_text ul li img {
+  padding: 0 45px;
+}
+.section04 .btn_gotop{
+display: flex;
+justify-content: center; 
+padding-bottom: 40px;
+}
+.section04 .btn_gotop .up i{
+  color:var(--white);
+  scale: 2;
+}

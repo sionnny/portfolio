@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
@@ -11,58 +10,246 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/sub.css" />
-    <script src="https://kit.fontawesome.com/02bc14eab4.js" crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="./assets/css/owl.carousel.css" />
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.css" />
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/common.js"></script>
 
-<body>
+    <script src="http://fatlinesofcode.github.io/jquery.smoothwheel/src/jquery.smoothwheel.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/02bc14eab4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
     <!-- 로고 -->
     <header>
-        <h1 class="logo">
-            SION.
-            <a href="./index.html"></a>
-        </h1>
+      <h1 class="logo">
+        SION.
+        <a href="./index.html"></a>
+      </h1>
 
-        <!-- 메뉴  -->
-        <nav class="menu">
-            <ul class="menu_list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Works</a></li>
-            </ul>
-        </nav>
+      <!-- 메뉴  -->
+      <nav class="menu">
+        <ul class="menu_list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Works</a></li>
+        </ul>
+      </nav>
     </header>
     <main class="wrap">
-        <section class="section01">
-            <div class="container">
-                <div class="section01_inner">
-                    <div class="title01">
-                        <h2>SION SHIN</h2><br/>
-                        <small>Based In Daegu</small>
-                    </div>
-                    <div class="section01_img">
-                        <!--이미지차후변경-->
-                        <img src="./assets/imgs/mainimg.png" alt="mainvisual" />
-                    </div>
-                    <div class="title02">UXUI Designer<br />&Web Publisher</div>
-                </div>
+      <section class="section01">
+        <div class="container">
+          <div class="section01_inner">
+            <div class="title01">
+              <h2>SION SHIN</h2>
+              <br />
+              <small>Based In Daegu</small>
             </div>
-        </section>
-        <section class="section02">
-            <div class="container">
-                <div class="section02_inner">
-                    <div class="section02_img">
-                        <!--이미지추후변경-->
-                        <img src="./assets/imgs/section02-img.png" alt="추후변경" />
-                    </div>
-                    <div class="section02_text">
-                        <h2>Lorem ipsum dolor sit<br> amet, consectetur ectetur<br> adipiscing elit.</h2>
-                        <span>Vivamus lacinia bibendum augue, id aliquam felis<br>  laoreet sed. Proin tellus leo, malesuada eget ante quis,<br>  vulputate lacinia velit. Phasellus porttitor at urna ut<br>  faucibus. Etiam dictum diam elit, vitae mattis sapien<br>  ultrices ut.</span>
-                        <small>Based In Daegu</small>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-</body>
 
+            <div class="section01_img">
+              <!--이미지차후변경-->
+              <img src="./assets/imgs/about.webp" alt="mainvisual" />
+            </div>
+            <div class="title02">UXUI Designer<br />&Web Publisher</div>
+          </div>
+        </div>
+      </section>
+      <section class="section02">
+        <div class="container">
+          <div class="section02_inner">
+            <div class="section02_img">
+              <!--이미지추후변경-->
+
+              <img src="./assets/imgs/section02-img.png" alt="추후변경" />
+            </div>
+            <div class="section02_text">
+              <h2>
+                Lorem ipsum dolor sit<br />
+                amet, consectetur ectetur<br />
+                adipiscing elit.
+              </h2>
+              <span
+                >Vivamus lacinia bibendum augue, id aliquam felis<br />
+                laoreet sed. Proin tellus leo, malesuada eget ante quis,<br />
+                vulputate lacinia velit. Phasellus porttitor at urna ut<br />
+                faucibus. Etiam dictum diam elit, vitae mattis sapien<br />
+                ultrices ut.</span
+              >
+              <a href="#"><small>More About</small></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section03">
+        <div class="container">
+          <div class="section03_inner">
+            <h2>works</h2>
+            <div class="section03_text">
+              <div class="left_text">
+                <h3>UIUX Projects</h3>
+                <a href="#"><small>scroll to the right</small></a>
+              </div>
+              <span
+                >Vivamus lacinia bibendum augue, id aliquam felis laoreet<br />
+                sed. Proin tellus leo, malesuada eget ante quis, vulputate<br />
+                lacinia velit. Phasellus porttitor at urna ut faucibus. Etiam<br />
+                dictum diam elit, vitae mattis sapien ultricmattis sapien<br />
+                ultrices ut.mattis sapien ultrices</span
+              >
+            </div>
+            <div class="section03_img owl-carousel">
+              <div class="img-wrap">
+                <a href="#"><img src="./assets/imgs/mcdo.png" alt="표지" /></a>
+              </div>
+              <div class="img-wrap">
+                <a href="#"
+                  ><img src="./assets/imgs/petuiux.png" alt="표지"
+                /></a>
+              </div>
+              <div class="img-wrap">
+                <a href="#"><img src="./assets/imgs/mcdo.png" alt="표지" /></a>
+              </div>
+              <div class="img-wrap">
+                <a href="#"
+                  ><img src="./assets/imgs/petuiux.png" alt="표지"
+                /></a>
+              </div>
+              <div class="img-wrap">
+                <a href="#"><img src="./assets/imgs/mcdo.png" alt="표지" /></a>
+              </div>
+              <div class="img-wrap">
+                <a href="#"><img src="./assets/imgs/mcdo.png" alt="표지" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="section03_inner">
+            <div class="section03_text">
+              <div class="left_text">
+                <h3>Web Sites</h3>
+                <a href="#"><small>scroll to the right</small></a>
+              </div>
+              <span
+                >Vivamus lacinia bibendum augue, id aliquam felis laoreet<br />
+                sed. Proin tellus leo, malesuada eget ante quis, vulputate<br />
+                lacinia velit. Phasellus porttitor at urna ut faucibus. Etiam<br />
+                dictum diam elit, vitae mattis sapien ultricmattis sapien<br />
+                ultrices ut.mattis sapien ultrices</span
+              >
+            </div>
+            <div class="section03_img owl-carousel">
+              <div class="img-wrap">
+                <a href="#"><img src="./assets/imgs/mcdo.png" alt="표지" /></a>
+              </div>
+              <div class="img-wrap">
+                <a href="#"
+                  ><img src="./assets/imgs/petuiux.png" alt="표지"
+                /></a>
+              </div>
+              <div class="img-wrap">
+                <a href="#"><img src="./assets/imgs/mcdo.png" alt="표지" /></a>
+              </div>
+              <div class="img-wrap">
+                <a href="#"
+                  ><img src="./assets/imgs/petuiux.png" alt="표지"
+                /></a>
+              </div>
+              <div class="img-wrap">
+                <a href="#"><img src="./assets/imgs/mcdo.png" alt="표지" /></a>
+              </div>
+              <div class="img-wrap">
+                <a href="#"><img src="./assets/imgs/mcdo.png" alt="표지" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="section03_inner">
+            <div class="section03_text">
+              <div class="left_text">
+                <h3>Others</h3>
+                <a href="#"><small>scroll to the right</small></a>
+              </div>
+              <span
+                >Vivamus lacinia bibendum augue, id aliquam felis laoreet<br />
+                sed. Proin tellus leo, malesuada eget ante quis, vulputate<br />
+                lacinia velit. Phasellus porttitor at urna ut faucibus. Etiam<br />
+                dictum diam elit, vitae mattis sapien ultricmattis sapien<br />
+                ultrices ut.mattis sapien ultrices</span
+              >
+            </div>
+            <div class="section03_img owl-carousel">
+              <div class="img-wrap">
+                <a href="#"><img src="./assets/imgs/mcdo.png" alt="표지" /></a>
+              </div>
+              <div class="img-wrap">
+                <a href="#"
+                  ><img src="./assets/imgs/petuiux.png" alt="표지"
+                /></a>
+              </div>
+              <div class="img-wrap">
+                <a href="#"><img src="./assets/imgs/mcdo.png" alt="표지" /></a>
+              </div>
+              <div class="img-wrap">
+                <a href="#"
+                  ><img src="./assets/imgs/petuiux.png" alt="표지"
+                /></a>
+              </div>
+              <div class="img-wrap">
+                <a href="#"><img src="./assets/imgs/mcdo.png" alt="표지" /></a>
+              </div>
+              <div class="img-wrap">
+                <a href="#"><img src="./assets/imgs/mcdo.png" alt="표지" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section04">
+        <div class="container">
+          <div class="section04_inner">
+            <div class="section04_text">
+              <ul>
+                <li>
+                  E-mail<img
+                    src="./assets/imgs/pixelarticons_android.png"
+                    alt=""
+                  />wpaj2457@naver.com
+                </li>
+                <li>
+                  Mobile Number
+                  <img
+                    src="./assets/imgs/pixelarticons_moon-star.png"
+                    alt=""
+                  />010-3937-3818
+                </li>
+                <li>
+                  <img src="./assets/imgs/pixelarticons_cloud.png" alt="" />UIUX
+                  Designer
+                </li>
+                <li>
+                  Web<img
+                    src="./assets/imgs/pixelarticons_bug.png"
+                    alt=""
+                  />Publisher
+                </li>
+              </ul>
+            </div>
+
+            <a href="#" class="btn_gotop">
+              <span class="up">
+                <i class="fa-solid fa-caret-up"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
