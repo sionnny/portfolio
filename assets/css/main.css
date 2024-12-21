@@ -209,7 +209,7 @@ header .menu .mo_menu_list {
   width: 400px;
   height: 400px;
   border-radius: 50%;
-  background-image: url(/assets/imgs/pro-img.png);
+  background-image: url(assets/imgs/pro-img.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
