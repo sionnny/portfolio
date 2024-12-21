@@ -20,3 +20,10 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  padding-top: 140px;
+  background-color: var(--neonblack);
+  font-size: 16px;
+  
+  /* 생략 */
+}
