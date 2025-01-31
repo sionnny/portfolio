@@ -1,5 +1,6 @@
 :root {
   --black: #000;
+  --commonblack: #333333;
   --white: #fff;
   --neonblack: #0e090d;
   --neongreen: #a7ff50;
@@ -43,52 +44,48 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  border-bottom: 1px solid rgb(226, 221, 215);
 }
 
 header .logo {
-  font-family: "MangoGrotesque-Regular";
-  font-size: 4em;
+  font-family: "NoonnuBasicGothicRegular";
+  font-size: 30px;
   align-items: center;
   justify-content: center;
   font-weight: 600;
-  color: var(--black);
+  color: var(--neonblack);
+  letter-spacing: -1px;
 }
 
 header .menu .menu_list {
   display: flex;
   gap: 6.8rem;
-  font-family: "MangoGrotesque-Regular";
-  font-size: 1.8rem;
+  font-family: "NoonnuBasicGothicRegular";
+  font-size: 20px;
   /**/
   color: var(--black);
+  letter-spacing: -1px;
 }
 header .menu .mo_menu_list {
   display: none;
 }
-/*헤더 반응형*/
-@media screen and (max-width: 768px) {
-  header {
-    justify-content: center;
-  }
-
-  header .logo {
-    font-size: 3em;
-  }
-
-  header .menu .menu_list {
-    gap: 3rem;
-    padding-left: 5em;
-  }
-  .menu_list li {
-    text-align: center;
-    width: 100%;
-    font-size: 1em;
-  }
+header .notion {
+  width: 110px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid;
+  border-radius: 50px;
 }
+header .notion:hover {
+  background-color: #000;
+  color: var(--white);
+  transition: background-color 0.5s ease;
+}
+
 /* 섹션 01
  */
 .section01 {
-  height: 100vh;
   position: relative;
   background-color: var(--white);
   color: var(--black);
@@ -111,21 +108,6 @@ header .menu .mo_menu_list {
   animation: float 3s ease-in-out infinite;
 }
 
-@keyframes float {
-  0% {
-    transform: translateY(0);
-    transform: translateX(0);
-  }
-
-  50% {
-    transform: translateY(-20px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
 .section01 .section01_inner {
   color: var(--black);
   display: flex;
@@ -136,13 +118,6 @@ header .menu .mo_menu_list {
 
 .title01 {
   position: relative;
-}
-
-.title01 h2 {
-  font-size: 136px;
-  text-align: center;
-  font-weight: 500;
-  color: var(--black);
 }
 
 .title01 small {
@@ -164,45 +139,7 @@ header .menu .mo_menu_list {
   font-size: 106px;
   color: var(--black);
 }
-/* 반응형*/
-@media screen and (max-width: 768px) {
-  .section01_inner h2,
-  small,
-  .title02 {
-    font-size: 4em;
-  }
 
-  .section01_inner {
-    padding-top: 15em;
-  }
-
-  .title01 {
-    position: absolute;
-    left: 40%;
-    top: 9em;
-    transform: translateX(-40%);
-  }
-
-  small {
-    top: 3em;
-    width: 100%;
-    left: 50%;
-    transform: translate(-50%);
-  }
-
-  .title02 {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 9em;
-  }
-
-  .section01_img {
-    left: -50%;
-    scale: 2;
-    top: 5em;
-  }
-}
 /* 섹션 02 */
 
 .section02 {
@@ -210,10 +147,10 @@ header .menu .mo_menu_list {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding-top: 20px;
-  height: 100vh;
+  padding-top: 140px;
   background-color: var(--white);
   color: var(--black);
+  padding-bottom: 100px;
 }
 
 .section02 .intro-container {
@@ -264,14 +201,6 @@ header .menu .mo_menu_list {
   border-radius: 15px;
 }
 
-.section02_text h2 {
-  font-size: 2em;
-  letter-spacing: -5px;
-  padding-bottom: 70px;
-  font-weight: 300;
-  color: var(--black);
-}
-
 .section02_text .section02_text02 {
   font-size: 32px;
   letter-spacing: -2px;
@@ -279,60 +208,6 @@ header .menu .mo_menu_list {
   display: flex;
   gap: 120px;
   margin-top: 0px;
-}
-
-/*about me 텍스트*/
-.section02_text02 li h3 {
-  font-size: 28px;
-  font-family: "Pretendard-Regular";
-  letter-spacing: -1px;
-  font-weight: 600;
-  margin-bottom: 16px;
-  color: var(--black);
-}
-.section02_text02 h3::before {
-  content: "\f111";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 600;
-  color: var(--neongreen);
-  font-size: 10px;
-  padding-right: 10px;
-}
-.section02_text02 .skill_img {
-  display: flex;
-}
-.section02_text02 .skill_wrap {
-  margin-top: 16px;
-}
-.section02_text02 li {
-  font-size: 20px;
-  font-family: "Pretendard-Regular";
-  padding-bottom: 8px;
-  color: var(--black);
-}
-.section02_text02 li img {
-  width: 44px;
-}
-.section02_text02 li .tag {
-  padding-bottom: 4px;
-  font-weight: 700;
-}
-.section02_text02 .edu_wrap .certi {
-  padding-top: 28px;
-}
-
-.section02_text02 .skill .section02_inner small {
-  position: absolute;
-  left: 0;
-  font-size: 18px;
-  bottom: -50px;
-  color: var(--black);
-}
-
-.left_text .edu_wrap .edu_text ul {
-  display: flex;
-  gap: 30px;
-  justify-content: space-between;
 }
 
 /* 섹션 03 */
@@ -343,28 +218,19 @@ header .menu .mo_menu_list {
   color: var(--black);
 }
 
-.section03_inner h2 {
-  color: var(--black);
-  font-family: "MangoGrotesque-Regular";
-  font-size: 100px;
-  font-weight: 200;
-  text-align: center;
-  padding-bottom: 50px;
-}
-
 .section03_text {
   color: var(--black);
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding-top: 60px; */
+  margin-top: 50px;
 }
 
 .section03_text .left_text h3 {
-  font-size: 80px;
-  font-family: "MangoGrotesque-Regular";
+  font-size: 18px;
+  font-family: "NoonnuBasicGothicRegular";
   font-weight: 300;
-  color: var(--black);
+  color: #787878;
 }
 
 .section03_inner small::before {
@@ -379,13 +245,12 @@ header .menu .mo_menu_list {
 .section03_img {
   display: flex;
   gap: 20px;
-  padding: 50px 0;
+  padding: 36px 0;
 }
 
 .section03_img .img-wrap {
   overflow: hidden;
   margin: 0 auto;
-
   margin-right: 10px;
   border-radius: 20px;
 }
@@ -407,11 +272,10 @@ header .menu .mo_menu_list {
   cursor: pointer;
   font-family: "Pretendard-Regular", sans-serif;
   font-weight: 600;
-  border: 2px solid var(--black);
+  border: 1.5px solid var(--black);
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 
 .btn-wrap .port-btn:hover {
   background-color: rgb(212, 120, 119);
@@ -489,34 +353,15 @@ header .menu .mo_menu_list {
 
 .section04 {
   overflow: hidden;
-  height: 100vh;
+
   background-color: var(--white);
   color: var(--black);
-}
-
-.section04_inner h2 {
-  color: var(--black);
-  font-family: "MangoGrotesque-Regular";
-  font-size: 100px;
-  font-weight: 200;
-  text-align: center;
-  padding-bottom: 50px;
 }
 
 .section05 {
   overflow: hidden;
-  height: 100vh;
   background-color: var(--white);
   color: var(--black);
-}
-
-.section05_inner h2 {
-  color: var(--black);
-  font-family: "MangoGrotesque-Regular";
-  font-size: 100px;
-  font-weight: 200;
-  text-align: center;
-  padding-bottom: 50px;
 }
 
 header .menu .menu_list li a {
